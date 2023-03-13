@@ -65,7 +65,7 @@ No diretório raiz do projeto crie um novo diretório chamado __.vscode__, dentro 
 http://localhost:8080/home
 
 Funcionario
-```json
+```
 curl --location 'http://localhost:8080/members' \
 --header 'Content-Type: application/json' \
 --data '{
