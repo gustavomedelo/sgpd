@@ -18,6 +18,8 @@ spring:
     password: ${DB_PASSWORD:Postgres2022!}
     initialization-mode: always
     connectionTestQuery: 'SELECT 1'
+  flyway:
+    baselineOnMigrate: true
 
   jpa:
     properties:
@@ -28,10 +30,6 @@ spring:
     generate-ddl: true
 
 management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
   endpoint:
     health:
       show-details: always

@@ -50,7 +50,7 @@ public class Project {
     @Enumerated(EnumType.STRING)
     private StatusEnum status;
     @Column(name = "orcamento")
-    private Float budget; //Float?!
+    private Float budget;
     @Column(name = "risco")
     @Enumerated(EnumType.STRING)
     private RiskEnum risk;
